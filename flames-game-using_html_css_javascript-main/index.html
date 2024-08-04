@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flames Game</title>
+    <style>
+      body {
+        background-color: #ff4fbe;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: green;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      label {
+        display: block;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+      input[type="password"] {
+        padding: 10px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        border: 2px solid #ccc;
+        width: 50%;
+        margin-bottom: 20px;
+      }
+      input[type="text"] {
+        padding: 10px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        border: 2px solid #ccc;
+        width: 50%;
+        margin-bottom: 20px;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 1.2rem;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+      p.result {
+        font-size: 1.2rem;
+        margin-top: 50px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flames Game</h1>
+    <form>
+      <label for="name1">Your Name:</label>
+      <input type="text" id="name1" name="name1" required><br><br>
+      <label for="name2">Your Crush's Name:</label>
+      <input type="password" id="name2" name="name2" required><br><br>
+      <input type="submit" value="Calculate Flames">
+    </form>
+    <p class="result"></p>
+    <script>
+      function calculateFlames(event) {
+        event.preventDefault();
+        let name1 = document.getElementById("name1").value.trim().toLowerCase();
+        let name2 = document.getElementById("name2").value.trim().toLowerCase();
+        let flames = ["Friends", "Love", "Affection", "Marriage", "Enemy", "Sibling"];
+        let count = name1.length + name2.length;
+        for (let i = 0; i < name1.length; i++) {
+          if (name2.includes(name1.charAt(i))) {
+            count -= 2;
+          }
+        }
+        while (flames.length > 1) {
+          let index = count % flames.length;
+          flames.splice(index, 1);
+        }
+        let result = document.querySelector(".result");
+        result.textContent = `Your relationship with ${name2} is: ${flames[0]}`;
+      }
+      let form = document.querySelector("form");
+      form.addEventListener("submit", calculateFlames);
+    </script>
+  </body>
+</html>

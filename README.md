@@ -1,12 +1,12 @@
-My Python Projects
+# My Python Projects
 
 Welcome to my repository My Python Projects! 🚀 This repo contains various Python projects that I have worked on, ranging from AI/ML applications to automation scripts and web development.
 
-📌 About This Repository
+# 📌 About This Repository
 
 This repository is a collection of my hands-on Python projects built to explore different concepts, frameworks, and real-world applications. Each project is well-structured and includes clear documentation to help others understand and run the code easily.
 
-🛠 Tech Stack & Tools
+# 🛠 Tech Stack & Tools
 
 Programming Language: Python 🐍
 
@@ -14,7 +14,7 @@ Libraries/Frameworks: NumPy, Pandas, Scikit-Learn, TensorFlow, Flask, Streamlit,
 
 Other Tools: AWS, Git, Jupyter Notebook, VS Code
 
-📂 Project List
+# 📂 Project List
 
 1️⃣ Project Name 1 (e.g., AI-Powered Sign Language to Text Generator)
 
@@ -52,7 +52,7 @@ streamlit run sitemap_generator.py
 
 Project Details
 
-🚀 How to Use
+# 🚀 How to Use
 
 Clone the Repository
 
@@ -66,7 +66,7 @@ pip install -r requirements.txt
 Run Individual Projects
 Navigate to the project folder and follow the specific README file for each project.
 
-📌 Future Enhancements
+# 📌 Future Enhancements
 
 ✅ Improve UI for Streamlit-based projects✅ Add API integrations for better functionality✅ Deploy projects on AWS/Heroku for real-world access
 

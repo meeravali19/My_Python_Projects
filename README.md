@@ -10,7 +10,7 @@ This repository is a collection of my hands-on Python projects built to explore 
 
 **Programming Language:** Python 🐍
 
-**Libraries/Frameworks:** NumPy, Pandas, Scikit-Learn, TensorFlow, Flask, Streamlit, etc.
+**Libraries/Frameworks:** 🧮 NumPy, 📊 Pandas, 🤖 Scikit-Learn, 🧠 TensorFlow, 🌐 Flask, 📈 Streamlit, etc.  
 
 **Other Tools:** AWS, Git, Jupyter Notebook, VS Code
 
@@ -46,8 +46,8 @@ python fermi_pico_bagel_game.py
 ```
 
 ## 4. 📄 PDF Reader
-**Tech Used:** Python, PyPDF2
-**Purpose:** Reads and extracts text content from PDF files.
+**Tech Used:** Python, PyPDF2  
+**Purpose:** Reads and extracts text content from PDF files.  
 **How to Run:**
 ```sh
 cd pdf_reader
@@ -55,8 +55,8 @@ python pdf_reader.py
 ```
 **Dependencies:** PyPDF2
 ## 5. 📷 QR Code Generator & Reader
-**Tech Used:** Python, OpenCV, qrcode
-**Purpose:** Create and scan QR codes.
+**Tech Used:** Python, OpenCV, qrcode  
+**Purpose:** Create and scan QR codes.  
 **How to Generate QR:**
 ```sh
 cd qr_code_generator_and_reader
@@ -69,8 +69,8 @@ python qrcode_reader.py
 **Dependencies:** opencv-python, qrcode, Pillow
 
 ## 6. 🌈 RGB to Grayscale Converter
-**Tech Used:** Python, OpenCV
-**Purpose:** Converts an RGB image into grayscale format.
+**Tech Used:** Python, OpenCV  
+**Purpose:** Converts an RGB image into grayscale format.  
 **How to Run:**
 ```sh
 cd rgb_to_grayscale
@@ -78,8 +78,8 @@ python convert.py
 ```
 **Input:** Modify the image path inside the script or use CLI args.
 ## 7. 🔗 URL Shortener
-**Tech Used:** Python, pyshorteners
-**Purpose:** Takes a long URL and shortens it using a public API (e.g., TinyURL).
+**Tech Used:** Python, pyshorteners  
+**Purpose:** Takes a long URL and shortens it using a public API (e.g., TinyURL).  
 **How to Run:**
 ```sh
 cd url_shortener
